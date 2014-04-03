@@ -2,6 +2,10 @@ package com.yourtask.app;
 
 import android.app.Application;
 
+import com.yourtask.app.util.Injector;
+
+import javax.inject.Inject;
+
 public class YourTaskApplication extends Application {
 
     private volatile static YourTaskApplication mApplication;
@@ -40,5 +44,7 @@ public class YourTaskApplication extends Application {
         modules = new Object[]{
 
         };
+
+        Injector.init(modules);
     }
 }
