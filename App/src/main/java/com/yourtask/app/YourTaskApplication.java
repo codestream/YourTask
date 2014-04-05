@@ -2,9 +2,8 @@ package com.yourtask.app;
 
 import android.app.Application;
 
+import com.yourtask.app.module.NavigationDrawerModule;
 import com.yourtask.app.util.Injector;
-
-import javax.inject.Inject;
 
 public class YourTaskApplication extends Application {
 
@@ -42,7 +41,7 @@ public class YourTaskApplication extends Application {
         super.onCreate();
         mApplication = this;
         modules = new Object[]{
-
+                new NavigationDrawerModule()
         };
 
         Injector.init(modules);

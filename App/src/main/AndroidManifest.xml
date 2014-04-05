@@ -11,6 +11,9 @@
         <activity
             android:name="com.yourtask.app.MainActivity"
             android:label="@string/app_name" >
+
+        </activity>
+        <activity android:name=".ui.profile.ProfileActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

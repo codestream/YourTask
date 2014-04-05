@@ -4,5 +4,12 @@
     <string name="app_name">YourTask</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-
+    <string-array name="state">
+        <item>Dashboard</item>
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_launcher</item>
+    </array>
 </resources>
